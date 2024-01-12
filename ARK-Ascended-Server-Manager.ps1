@@ -85,6 +85,9 @@ $RCONEnabled = $ConfigData.RCONEnabled
 $ForceRespawnDinos = $ConfigData.ForceRespawnDinos
 $ServerIP = $ConfigData.ServerIP
 
+# Minimize powershell window
+$null = (New-Object -ComObject Shell.Application).MinimizeAll()
+
 # Create GUI window
 $Form = New-Object Windows.Forms.Form
 $Form.Text = "ARK-Ascended-Server-Manager"
